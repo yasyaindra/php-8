@@ -1,18 +1,23 @@
-<?php 
+<!DOCTYPE html>
+<?php
 
-// function myFunc($satu = 0, $dua = 0, $tiga = 0, $empat = 0){
-// 	return $satu + $dua * $tiga - $empat;
-// }
+define('BASE_URL', 'http://localhost:8080');
 
-// echo '<h1>'.myFunc(dua:2, tiga:3).'</h1>';
+?>
 
-$pintu = 6;
-
-echo match($pintu){
-	1 => "Dapet mobil",
-	2 => "Dapet sabun cuci",
-	3 => "duit 2000",
-	default => "Hmmmm kurang beruntung",
-}
-
-; ?>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<ul>Fitur PHP 8 
+		<li><a href="<?= BASE_URL ?>/attributes.php">Attributes</a></li>
+		<li><a href="<?= BASE_URL ?>/ConstructorPropertyPromotion.php">Constructor Property Promotion</a></li>
+		<li><a href="<?= BASE_URL ?>/namedArguments.php">Named Arguments</a></li>
+		<li><a href="<?= BASE_URL ?>/unionTypes.php">Union Types</a></li>
+		<li><a href="<?= BASE_URL ?>/matchExpression.php">Match Expression</a></li>
+</body>
+</html>
