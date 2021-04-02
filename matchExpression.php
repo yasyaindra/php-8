@@ -22,15 +22,22 @@
 //         $result = 'Apakah anda mengikuti ujian?';
 // };
 
-$value = 80 ;
+$value = 'Bu Indra'  ;
 
 $result = match(true) {
-    $value >= 100 => 'Lulus',
-    $value >= 80 => 'Anda Berbakat',
-    $value >= 70 => 'Anda dimaafkan',
-    $value >= 60 => 'Anda Gagal',
-    default => 'Apakah anda mengikuti ujian?'
+    str_contains($value, 'Pak') => 'Selamat Pagi Pak',
+    str_contains($value, 'Bu') => 'Selamat Pagi Bu'
 };
 
 echo $result . PHP_EOL;
+
+// $result = match(true) {
+//     $value >= 100 => 'Lulus',
+//     $value >= 80 => 'Anda Berbakat',
+//     $value >= 70 => 'Anda dimaafkan',
+//     $value >= 60 => 'Anda Gagal',
+//     default => 'Apakah anda mengikuti ujian?'
+// };
+
+// echo $result . PHP_EOL;
 

@@ -19,5 +19,8 @@ define('BASE_URL', 'http://localhost:8080');
 		<li><a href="<?= BASE_URL ?>/namedArguments.php">Named Arguments</a></li>
 		<li><a href="<?= BASE_URL ?>/unionTypes.php">Union Types</a></li>
 		<li><a href="<?= BASE_URL ?>/matchExpression.php">Match Expression</a></li>
+		<li><a href="<?= BASE_URL ?>/stringToNumber.php">String To Number Comparison</a></li>
+		<li><a href="<?= BASE_URL ?>/TypeError.php">Type Error</a></li>
+		<li><a href="<?= BASE_URL ?>/ValidationForFO.php">Validation For Function Overriding</a></li>
 </body>
 </html>
